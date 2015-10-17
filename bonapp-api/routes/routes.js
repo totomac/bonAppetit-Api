@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
 
 app.get('/recipes/:recipeId', function(req, res) {
     res.setHeader('Content-Type', 'text/plain');
-    res.end('hello world');
+    res.end('Recipe id = ' + req.params.recipeId);
 });
 
 app.use(function(req, res, next) {
